@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="TC001_orangeHRM_PageObject"
+    errors="0" failures="1" hostname="" id="" package="TC001_orangeHRM_PageObject" skipped="2"
+    tests="1" time="24.99" timestamp="">
+  
+    <testcase name="Login" classname="TC001_orangeHRM_PageObject" time="12.46" assertions="1">  <failure message="Timed out while waiting for element &lt;input[name=&#34;username&#34;]&gt; to be present for 10000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (10324ms)">    at Page.login (/home/knoldus/Documents/New Nightwatch_Project/nightwatch/pageObjects/home.ts:7:14)
+    at Object.Login (/home/knoldus/Documents/New Nightwatch_Project/test/TC001_orangeHRM_PageObject.ts:14:14)</failure>
+<system-out>[[ATTACHMENT|/home/knoldus/Documents/New Nightwatch_Project/screens/TC001_orangeHRM_PageObject/Login_FAILED_Oct-09-2023-104351-GMT+0530.png]]</system-out>
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+    
+    <testcase
+      name="Check Personal Info" classname="TC001_orangeHRM_PageObject">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Logout" classname="TC001_orangeHRM_PageObject">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
