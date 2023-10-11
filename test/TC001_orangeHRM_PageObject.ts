@@ -2,22 +2,24 @@ import { NightwatchBrowser } from 'nightwatch';
 
 
 module.exports = {
+
     before: function (browser: { globals: { waitForConditionTimeout: number } }) {
-        
         browser
             .globals.waitForConditionTimeout = 7000
     },
 
     'Login': function (browser: NightwatchBrowser) {
         var home = browser.page.home()
-        home
+           home
+           .navigate()
             .login()
-            .assert.urlContains('/index.php/dashboard')
+            .assert.urlContains('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')
     },
 
     'Check Personal Info': function (browser: NightwatchBrowser) {
         var myInfo = browser.page.myInfo()
         myInfo
+             
             .updateMyInfo('Rahul', 'Patil')
             .assert.value('@firstName', 'Rahul')
             .assert.value('@lastName', 'Patil')
